@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+## --- protected contents ---
+/**/protected/
+/**/privated/
+# exceptions
