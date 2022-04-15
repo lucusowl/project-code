@@ -9,4 +9,5 @@
 ## CodeBase / Temporary / Test in 'code-manager/'
 code-manager/archive/*
 code-manager/test/*
+code-manager/result.txt
 ### exceptions
