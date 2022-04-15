@@ -1,13 +1,30 @@
 # --- custom configuration ---
+
 ## Protected contents
 **/protected/
 **/privated/
-### exceptions
 
 ## Temporary / Test
 *.log
-## CodeBase / Temporary / Test in 'code-manager/'
+
+## Code-manager
+### CodeBase / Temporary / Test
 code-manager/archive/*
 code-manager/test/*
 code-manager/result.txt
-### exceptions
+code-manager/__pycache__/
+code-manager/main.*
+### Executables
+code-manager/out
+code-manager/out.out
+code-manager/out.exe
+code-manager/out.app
+code-manager/out.hex
+### Object files
+code-manager/out.o
+code-manager/out.obj
+code-manager/out.elf
+### Libararies
+code-manager/*.lib
+code-manager/*.dll
+code-manager/*.so
