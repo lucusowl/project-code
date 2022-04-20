@@ -2,10 +2,10 @@
 SET lan=%1
 
 @REM Save to archive/ and Initialize main code as template code
-IF EXIST template.%lan% (
-	COPY main.%lan% "archive/%date%-%time::=-%.%lan%"
+IF EXIST template\template.%lan% (
+	COPY main.%lan% "archive\%date%-%time::=-%.%lan%"
 	ECHO Archiving Completed.
-	COPY "template/template.%lan%" main.%lan%
+	COPY "template\template.%lan%" main.%lan%
 ) ELSE (
 	ECHO [ERROR]Not Found Template-Code of %lan%
 	GOTO :eof

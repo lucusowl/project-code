@@ -13,9 +13,9 @@ IF "%1"=="" (
 		@REM if '+' existed, backup previous result
 		SET lan=%1
 		SET lan=!lan:+=!
-		ECHO.>>archive/result-backup.txt
-		ECHO --------- %date% %time% --------->>archive/result-backup.txt
-		TYPE result.txt >> archive/result-backup.txt
+		ECHO.>>archive\result-backup.txt
+		ECHO --------- %date% %time% --------->>archive\result-backup.txt
+		TYPE result.txt >> archive\result-backup.txt
 	) || (
 		SET lan=%1
 	)
@@ -57,14 +57,14 @@ ECHO Complie completed.
 :Main
 @REM remove previous result
 DEL result.txt
-@REM test all case in ./test/
+@REM test all case in test directory
 SET idx=1
 FOR %%A IN (test/*) DO (
 	ECHO ========= Test Case !idx! : "%%A" =========>>result.txt
 	IF !lan!==py (
-		python main.py < test/%%A >> result.txt
+		python main.py < test\%%A >> result.txt
 	) ELSE (
-		out.exe < test/%%A >> result.txt
+		out.exe < test\%%A >> result.txt
 	)
 	SET /a idx+=1
 )
