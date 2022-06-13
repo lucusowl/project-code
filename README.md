@@ -14,3 +14,4 @@ A repository of
 ### code-manager
 
 코드 트레이닝 및 챌린지를 위한 Workspace
+테스트, Workspace 초기화 자동화
