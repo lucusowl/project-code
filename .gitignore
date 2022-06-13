@@ -11,7 +11,8 @@
 ### CodeBase / Temporary / Test
 code-manager/archive/*
 code-manager/test/*
-code-manager/result.txt
+code-manager/result
+code-manager/result.*
 code-manager/__pycache__/
 code-manager/main.*
 ### Executables
